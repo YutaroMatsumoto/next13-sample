@@ -2,7 +2,7 @@ import tw from 'twin.macro'
 
 export type CustomButtonProps = { isHover: boolean }
 
-export const BaseButtonStyle = tw`flex items-center justify-center h-9 px-5 rounded-lg border-2 font-bold`
+export const BaseButtonStyle = tw`flex items-center justify-center h-9 px-5 rounded-lg border-solid border-2 font-bold`
 
 const GreenButton = {
   button: ({ isHover }: CustomButtonProps) => [
