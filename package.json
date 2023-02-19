@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
+    "storybook": "sb dev -p 6006"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -23,6 +24,8 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@storybook/cli": "^7.0.0-beta.50",
+    "@storybook/nextjs": "^7.0.0-beta.50",
     "@types/styled-components": "^5.1.26",
     "autoprefixer": "^10.4.13",
     "babel-plugin-macros": "^3.1.0",
