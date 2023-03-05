@@ -1,41 +1,46 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button } from './Buttons'
+import { Button, ButtonProps } from './Buttons'
+/** 理解できないので使わない
+https://github.com/storybookjs/storybook/issues/13747 
+  type CSFType<M extends Meta<any>> = M extends {
+    component: ComponentType<infer P> //
+    args: infer D
+  }
+    ? { args: Omit<P, keyof D> } & { args: Partial<P> }
+    : never
+ */
 
-type ComponentType<P> = (props: P) => any
-
-type CSFType<M extends Meta<any>> = M extends {
-  component: ComponentType<infer P>
-  args: infer D
-}
-  ? { args: Omit<P, keyof D> } & { args: Partial<P> }
-  : never
+// type ComponentType<P> = (props: P) => any
 
 const meta = {
   title: 'Button',
   component: Button,
   args: { title: 'Button' },
+  argTypes: {
+    onClick: { action: 'clicked' },
+    className: { table: { disable: true } }, // これでcontrolsから対象外にできる
+  },
   tags: ['autodocs'], // enable automatic documentation page
 } satisfies Meta<typeof Button>
 
 export default meta
 
-type MetaType = typeof meta
+// type MetaType = typeof meta
+// type MyStory = CSFType<MetaType>
 
-type MyStory = CSFType<MetaType>
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<typeof meta>
 
-export const Green: MyStory = {
+export const Green: Story = {
   args: {
     title: 'Button',
-    onClick: () => console.warn('click'),
+    // onClick: () => {},
   },
 }
-console.log(Green)
 
 export const Black: Story = {
   args: {
     ...Green.args,
-    type: 'black',
+    // type: 'black',
   },
 }
 
