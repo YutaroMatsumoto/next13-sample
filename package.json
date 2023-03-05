@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
-    "storybook": "sb dev -p 6006"
+    "storybook": "sb dev -p 6006",
+    "build-storybook": "sb build",
+    "chromatic": "npx chromatic --project-token=608d853b3070"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -37,5 +39,7 @@
     "prettier": "^2.8.2",
     "tailwindcss": "^3.2.7",
     "twin.macro": "^3.1.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "next-13-sample@0.1.0"
 }
