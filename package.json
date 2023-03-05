@@ -10,7 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "storybook": "sb dev -p 6006",
     "build-storybook": "sb build",
-    "chromatic": "npx chromatic --project-token=608d853b3070"
+    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@next/font": "13.1.1",
