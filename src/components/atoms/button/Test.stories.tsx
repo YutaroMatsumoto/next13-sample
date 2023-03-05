@@ -11,10 +11,10 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'CSF2',
+  title: 'CSF2?',
   component: Button,
   args: {
-    title: 'CSF2',
+    title: 'CSF2?',
   },
 } as ComponentMeta<typeof Button>
 
