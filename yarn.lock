@@ -1571,6 +1571,22 @@
     ts-dedent "^2.0.0"
     uuid-browser "^3.1.0"
 
+"@storybook/addon-backgrounds@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.0.0-beta.55.tgz#71a75fa2bf1a3d4bfc9ca6a4cd30a48bb25d6683"
+  integrity sha512-+JZPhZuBuQOjMh3TmBAt1xJeZ72IpzmSJq/AvlxhTv51MyCHQHLCpbLHKJuisTwawSMDmHVaSVjRWNNt6MXe1A==
+  dependencies:
+    "@storybook/client-logger" "7.0.0-beta.55"
+    "@storybook/components" "7.0.0-beta.55"
+    "@storybook/core-events" "7.0.0-beta.55"
+    "@storybook/global" "^5.0.0"
+    "@storybook/manager-api" "7.0.0-beta.55"
+    "@storybook/preview-api" "7.0.0-beta.55"
+    "@storybook/theming" "7.0.0-beta.55"
+    "@storybook/types" "7.0.0-beta.55"
+    memoizerific "^1.11.3"
+    ts-dedent "^2.0.0"
+
 "@storybook/addon-controls@7.0.0-beta.55":
   version "7.0.0-beta.55"
   resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-7.0.0-beta.55.tgz#49c73a31f9d68312acbc50090848d8b5c0abcd21"
@@ -1614,6 +1630,88 @@
     remark-external-links "^8.0.0"
     remark-slug "^6.0.0"
     ts-dedent "^2.0.0"
+
+"@storybook/addon-essentials@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-7.0.0-beta.55.tgz#f7c42eb4b08722cda0fc316bcf9cab321c98ed63"
+  integrity sha512-5EifjcgyZskh8gPJeF3nmY3+ElQ9KyvG2oncf67aF04qZdKUJ+SNwOWLy6GVCzBN/lPXGjfDNwFqLd4N6B+cvw==
+  dependencies:
+    "@storybook/addon-actions" "7.0.0-beta.55"
+    "@storybook/addon-backgrounds" "7.0.0-beta.55"
+    "@storybook/addon-controls" "7.0.0-beta.55"
+    "@storybook/addon-docs" "7.0.0-beta.55"
+    "@storybook/addon-highlight" "7.0.0-beta.55"
+    "@storybook/addon-measure" "7.0.0-beta.55"
+    "@storybook/addon-outline" "7.0.0-beta.55"
+    "@storybook/addon-toolbars" "7.0.0-beta.55"
+    "@storybook/addon-viewport" "7.0.0-beta.55"
+    "@storybook/core-common" "7.0.0-beta.55"
+    "@storybook/manager-api" "7.0.0-beta.55"
+    "@storybook/node-logger" "7.0.0-beta.55"
+    "@storybook/preview-api" "7.0.0-beta.55"
+    ts-dedent "^2.0.0"
+
+"@storybook/addon-highlight@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-highlight/-/addon-highlight-7.0.0-beta.55.tgz#cb0afaf9fd3747069a2ffa1568081fefbe8b6158"
+  integrity sha512-YOjWPg27kYTgjSIdzQFcsgbYG648ze57XNLKetivxLsq1WQqLiin9+s98yRennIHwgdcgMxD11ITBt3lPP+Xhg==
+  dependencies:
+    "@storybook/core-events" "7.0.0-beta.55"
+    "@storybook/global" "^5.0.0"
+    "@storybook/preview-api" "7.0.0-beta.55"
+
+"@storybook/addon-measure@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-measure/-/addon-measure-7.0.0-beta.55.tgz#a0fc631a58d3d6830d134e46cf077100e1d2ef47"
+  integrity sha512-ONs5qJ+7LS5yqGJkw5QVsNKGg5LH2kJyexleFfj5cC6n5O3u11jntN8HY2PvgqH/e89Zb2oz4R7GDh/SqnnvVg==
+  dependencies:
+    "@storybook/client-logger" "7.0.0-beta.55"
+    "@storybook/components" "7.0.0-beta.55"
+    "@storybook/core-events" "7.0.0-beta.55"
+    "@storybook/global" "^5.0.0"
+    "@storybook/manager-api" "7.0.0-beta.55"
+    "@storybook/preview-api" "7.0.0-beta.55"
+    "@storybook/types" "7.0.0-beta.55"
+
+"@storybook/addon-outline@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-outline/-/addon-outline-7.0.0-beta.55.tgz#e6a41ccf28bff198cd72fb820855736ecdfc960c"
+  integrity sha512-sL+qJ50+C4m4M9rACfn5WuyJtDHV1Bq1Y6G5obs4OMFjpDQp3S+L6Gkgp79QONeiVilxsKURHghNg/oErnW2Gg==
+  dependencies:
+    "@storybook/client-logger" "7.0.0-beta.55"
+    "@storybook/components" "7.0.0-beta.55"
+    "@storybook/core-events" "7.0.0-beta.55"
+    "@storybook/global" "^5.0.0"
+    "@storybook/manager-api" "7.0.0-beta.55"
+    "@storybook/preview-api" "7.0.0-beta.55"
+    "@storybook/types" "7.0.0-beta.55"
+    ts-dedent "^2.0.0"
+
+"@storybook/addon-toolbars@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-toolbars/-/addon-toolbars-7.0.0-beta.55.tgz#b892f5ff96b47b82407e9daa49a78efb16b1cfff"
+  integrity sha512-pdiqe+oDH9/GmLFi+IaYuZ1eO634sM9ZgpWl//YOjy1GwIBKOaxS4t6TPad+9KjtloSUr/S9JBYj+dn1/mo3lA==
+  dependencies:
+    "@storybook/client-logger" "7.0.0-beta.55"
+    "@storybook/components" "7.0.0-beta.55"
+    "@storybook/manager-api" "7.0.0-beta.55"
+    "@storybook/preview-api" "7.0.0-beta.55"
+    "@storybook/theming" "7.0.0-beta.55"
+
+"@storybook/addon-viewport@7.0.0-beta.55":
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-7.0.0-beta.55.tgz#6683dfc882378f9ffdf6342fdfbb684eb0f5329e"
+  integrity sha512-jp6BHbeK+j2G28g1uV5X0mnDgj5Qkf38dV3aiegG3OD4khtYnEbdV8QSlCQ1kgKi6/q8KLP7mQX/Fr8xJ5/aVA==
+  dependencies:
+    "@storybook/client-logger" "7.0.0-beta.55"
+    "@storybook/components" "7.0.0-beta.55"
+    "@storybook/core-events" "7.0.0-beta.55"
+    "@storybook/global" "^5.0.0"
+    "@storybook/manager-api" "7.0.0-beta.55"
+    "@storybook/preview-api" "7.0.0-beta.55"
+    "@storybook/theming" "7.0.0-beta.55"
+    memoizerific "^1.11.3"
+    prop-types "^15.7.2"
 
 "@storybook/addons@7.0.0-beta.55":
   version "7.0.0-beta.55"
