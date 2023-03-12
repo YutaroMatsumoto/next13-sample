@@ -15,7 +15,7 @@ https://github.com/storybookjs/storybook/issues/13747
 const meta = {
   title: 'Button',
   component: Button,
-  args: { title: 'Button' },
+  args: { title: 'Buttona' },
   argTypes: {
     onClick: { action: 'clicked' },
     className: { table: { disable: true } }, // これでcontrolsから対象外にできる
