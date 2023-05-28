@@ -10,7 +10,6 @@ export type ButtonProps = {
   title: string
   onClick: () => void
 }
-
 export const Button = ({
   className,
   type = 'green',
