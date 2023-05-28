@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { Button } from 'src/components/atoms/button/Buttons'
-import { TextInput } from 'src/components/atoms/form/TextInput'
+import { Button } from 'src/features/ui/button/Buttons'
+import { TextInput } from 'src/features/ui/form/TextInput'
 
 export default function Home() {
   return (
