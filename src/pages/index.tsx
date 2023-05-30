@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import { useForm } from 'react-hook-form'
+import { RegisterForm } from 'src/features/sample/RegisterForm'
 import { Button } from 'src/features/ui/button/Buttons'
 import { TextInput } from 'src/features/ui/form/TextInput'
 
 export default function Home() {
-  const { register } = useForm()
   return (
     <>
       <Head>
@@ -13,7 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <TextInput registeration={register('example')} />
+        a
+        <RegisterForm title="サンプル" />
         <Button title="テスト" onClick={() => console.log('click')} />
       </main>
     </>
