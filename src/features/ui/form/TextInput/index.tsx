@@ -2,13 +2,15 @@ import 'twin.macro'
 import { UseFormRegisterReturn } from 'react-hook-form'
 
 type Props = {
+  id: string
   registeration?: UseFormRegisterReturn
   className?: string
 }
 
-export const TextInput = ({ registeration, className }: Props) => {
+export const TextInput = ({ id, registeration, className }: Props) => {
   return (
     <input
+      id={id}
       type="text"
       tw="w-full border-solid border border-gray30 rounded-lg px-2 py-1 focus:outline-none focus:border focus:border-green40"
       className={className}
