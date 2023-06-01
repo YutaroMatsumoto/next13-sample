@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        a
         <RegisterForm title="サンプル" />
         <Button title="テスト" onClick={() => console.log('click')} />
       </main>
