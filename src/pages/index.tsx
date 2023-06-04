@@ -1,9 +1,15 @@
 import Head from 'next/head'
-import { RegisterForm } from 'src/features/sample/RegisterForm'
+import { useForm } from 'react-hook-form'
+import { SampleForm, SampleFormInputType } from 'src/features/sample/SampleForm'
 import { Button } from 'src/features/ui/button/Buttons'
 import { TextInput } from 'src/features/ui/form/TextInput'
 
 export default function Home() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<SampleFormInputType>()
   return (
     <>
       <Head>
@@ -12,8 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <RegisterForm title="サンプル" />
-        <Button title="テスト" onClick={() => console.log('click')} />
+        <form onSubmit={handleSubmit(() => console.log('submit'))}>
+          <SampleForm register={register} errors={errors} />
+          <Button title="送信" onClick={() => console.log('送信ボタン')} />
+        </form>
       </main>
     </>
   )
