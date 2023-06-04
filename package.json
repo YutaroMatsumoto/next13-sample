@@ -9,6 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "storybook": "sb dev -p 6006",
+    "test-storybook": "test-storybook",
     "build-storybook": "sb build",
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
@@ -27,12 +28,14 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@storybook/addon-coverage": "^0.0.8",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",
     "@storybook/blocks": "7.0.18",
     "@storybook/cli": "7.0.18",
     "@storybook/jest": "^0.1.0",
     "@storybook/nextjs": "7.0.18",
+    "@storybook/test-runner": "^0.10.0",
     "@storybook/testing-library": "^0.1.0",
     "@types/styled-components": "^5.1.26",
     "autoprefixer": "^10.4.13",
