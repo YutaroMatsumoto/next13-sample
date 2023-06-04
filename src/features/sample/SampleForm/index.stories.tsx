@@ -12,8 +12,7 @@ function TestFormComponent() {
 
 export default {
   component: TestFormComponent,
-  args: { children: 'エラー' },
-} as Meta<typeof SampleForm>
+} satisfies Meta<typeof SampleForm>
 
 type Story = StoryObj<typeof SampleForm>
 
