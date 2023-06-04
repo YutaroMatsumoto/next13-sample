@@ -16,7 +16,7 @@ export const TextInput = forwardRef<HTMLInputElement, Props>(function TextInput(
   return (
     <input
       type="text"
-      tw="w-full border-solid border border-gray30 rounded-lg px-2 py-1 focus:outline-none focus:border focus:border-green40"
+      tw="w-full box-border border-solid border border-gray30 rounded-lg px-2 py-1 focus:outline-none focus:border focus:border-green40"
       className={className}
       ref={ref}
       {...props}
