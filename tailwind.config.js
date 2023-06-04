@@ -2,6 +2,11 @@
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{ts,tsx}'],
   theme: {
+    extend: {
+      aria: {
+        invalid: 'invalid="true"',
+      },
+    },
     colors: {
       white: '#FFFFFF',
       black: '#000000',
@@ -16,8 +21,8 @@ module.exports = {
       gray20: '#dce7eb',
       gray40: '#9ca3af',
       red: '#f43f5e',
+      red10: 'rgb(254 226 226)',
     },
-    extend: {},
   },
   plugins: [],
 }
