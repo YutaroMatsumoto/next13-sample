@@ -6,7 +6,6 @@ type Props = ComponentPropsWithoutRef<'p'>
 
 export const ErrorMessage = forwardRef<HTMLParagraphElement, Props>(
   function ErrorMessage({ className, ...props }, ref) {
-    console.log({ props })
     return (
       <ErrorMessageStyle
         {...props}

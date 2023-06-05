@@ -21,7 +21,6 @@ export const TextInputWithInfo = forwardRef<HTMLInputElement, Props>(
     const textInputId = `${componentId}-textInput`
     const descriptionId = `${componentId}-description`
     const errorMessageId = `${componentId}-errorMessage`
-    console.log({ errorMessageId })
     return (
       <section>
         <header>

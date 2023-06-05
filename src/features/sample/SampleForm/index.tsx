@@ -1,4 +1,3 @@
-import { useId } from 'react'
 // import { useForm } from 'react-hook-form'
 import { styled } from 'twin.macro'
 import { TextInputWithInfo } from '../../ui/form/TextInputWithInfo'
@@ -14,8 +13,6 @@ type Props<T extends FieldValues = SampleFormInputType> = {
   errors: FieldErrors<T>
 }
 export const SampleForm = ({ register, errors }: Props) => {
-  const componentId = useId()
-  console.log({ componentId })
   return (
     <Div>
       <TextInputWithInfo
