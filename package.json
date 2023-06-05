@@ -10,6 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "storybook": "sb dev -p 6006",
     "test-storybook": "test-storybook",
+    "coverage-storybook": "test-storybook --coverage",
     "build-storybook": "sb build",
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
