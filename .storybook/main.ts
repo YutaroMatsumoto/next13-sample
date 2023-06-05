@@ -8,7 +8,11 @@ const config: StorybookConfig = {
     name: '@storybook/nextjs',
     options: {},
   },
-  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-coverage',
+  ],
 }
 
 export default config
