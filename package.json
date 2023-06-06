@@ -10,6 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "storybook": "sb dev -p 6006",
     "test-storybook": "test-storybook",
+    "coverage-storybook": "test-storybook --coverage",
     "build-storybook": "sb build",
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
@@ -28,6 +29,7 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.0.18",
     "@storybook/addon-coverage": "^0.0.8",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",

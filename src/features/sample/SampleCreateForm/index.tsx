@@ -6,12 +6,13 @@ export const SampleCreateForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
   } = useForm<SampleFormInputType>()
   return (
     <form onSubmit={handleSubmit(() => console.log('submit'))}>
       <SampleForm register={register} errors={errors} />
       <Button title="送信" onClick={() => console.log('送信ボタン')} />
+      {isSubmitSuccessful && <p>送信成功！</p>}
     </form>
   )
 }
