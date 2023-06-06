@@ -6,7 +6,7 @@ export const BaseButtonStyle = tw`flex items-center justify-center h-9 px-5 roun
 
 const GreenButton = {
   button: ({ isHover }: CustomButtonProps) => [
-    tw`bg-red10 border-green40`,
+    tw`bg-gray40 border-green40`,
     isHover && tw`transition bg-green40`,
   ],
   title: ({ isHover }: CustomButtonProps) => [
