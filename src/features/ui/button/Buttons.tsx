@@ -17,6 +17,7 @@ export const Button = ({
   onClick,
 }: ButtonProps) => {
   const [isHover, setIsHover] = useState<boolean>(false)
+  console.log('aaa')
 
   return (
     <button
